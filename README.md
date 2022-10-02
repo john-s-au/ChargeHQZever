@@ -10,7 +10,7 @@ See: https://chargehq.net/kb/push-api
 ## Install Steps
 1. Create Charge HQ account
 1. Request your SiteId using Charge HQ's contact form. https://chargehq.net/contact
-1. Save zever.py and configure zever.py with the SiteId and Address 
+1. Save zever.py and configure zever.py with the `SiteId` and `Address` fields 
 1. Install Python
 1. Install zeversolarlocal (https://github.com/sander76/zeversolarlocal) `pip install zeversolarlocal`
 
