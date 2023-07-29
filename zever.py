@@ -18,8 +18,8 @@ def getCurrentPower() -> int:
 def sendPower(power: int):
    solarPower = power/1000
    print(solarPower)
-   url = "https://api.chargehq.net/api/site-meters"
-   data = {'siteId':'<siteid here>','siteMeters':{'production_kw':solarPower}}
+   url = "https://api.chargehq.net/api/public/push-solar-data"
+   data = {'apiKey':'<siteid here>','siteMeters':{'production_kw':solarPower}}
    headers = {'Content-type': 'application/json','Accept':'text/plain'}
    r = requests.post(url,data=json.dumps(data), headers=headers)
    print(r)
